@@ -4,14 +4,7 @@ import ReactWebChat, { createDirectLine } from "botframework-webchat"
 
 export const ChatBot = () => {
   const [token, setToken] = useState("")
-  const [showChat, setShowChat] = useState(false)
   const directLine = useMemo(() => createDirectLine({ token }), [token])
-
-//   useEffect(() => {
-//     API.post("/chatbot").then((data) => {
-//       setToken(data.data.token)
-//     })
-//   }, [showChat])
 
 const requestOptions = {
     method: 'POST',
