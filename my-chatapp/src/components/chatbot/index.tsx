@@ -19,7 +19,7 @@ const requestOptions = {
 };
 
 const fetchData = async () => {
-    const response = await fetch("https://apim-01-downsizer-dev.azure-api.net/api/v1/chatbot", requestOptions)
+    const response = await fetch("https://localhost/api/chatbot", requestOptions)
     const data = await response.json()
     setToken(data.data.token)
   }
